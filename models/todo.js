@@ -1,9 +1,9 @@
-const mongoose = requier('mongoose')
+const mongoose = require('mongoose')
 
-const todoSchema = new mongoose.Schma({
-    title: { type: String, require: true},
-    description: { type: String, required: true},
-    completed: { type: Boolean, required: true}
+const todoSchema = new mongoose.Schema({
+    title: { type: String, required: true },
+    description: { type: String, required: true },
+    completed: { type: Boolean, required: true }
 }, {
     timestamps: true
 })
